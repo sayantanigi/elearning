@@ -1,0 +1,155 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900);
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Normal Color*/
+/*Border radius*/
+/*Preloader*/
+.preloader {
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	position: fixed;
+	z-index: 99999;
+	background: #fff;
+}
+.preloader .cssload-speeding-wheel {
+	position: absolute;
+	top: calc(50% - 3.5px);
+	left: calc(50% - 3.5px);
+}
+/*Just change your choise color here its theme Colors*/
+body {
+	background: #fff;
+}
+/*Top Header Part*/
+.logo i {
+	color: #ffffff;
+}
+.navbar-header {
+	background: #d0bc8d;
+}
+.navbar-top-links > li > a {
+	color: #ffffff;
+}
+.sidebar .sidebar-head {
+	background: #ffffff;
+}
+.sidebar .sidebar-head h3 {
+	color: #686868;
+}
+/*Right panel*/
+.right-sidebar .rpanel-title {
+	background: #1b96d9;
+}
+/*Bread Crumb*/
+.bg-title .breadcrumb .active {
+	color: #013fe1;
+}
+/*Sidebar*/
+.sidebar {
+	background: #fff;
+	box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+}
+.sidebar .label-custom {
+	background: #01c0c8;
+}
+#side-menu li a {
+	color: #54667a;
+}
+#side-menu li.active > a {
+	background: #013fe1;
+	color: #fff;
+}
+#side-menu li a {
+	color: #54667a;
+	border-left: 0px solid #fff;
+}
+#side-menu > li > a:hover,
+#side-menu > li > a:focus {
+	background: #013fe1;
+	color: #fff;
+}
+#side-menu > li > a.active {
+	background: #013fe1;
+	color: #ffffff;
+	font-weight: 500;
+	
+}
+#side-menu ul > li > a:hover {
+	color: #013fe1;
+}
+#side-menu ul > li > a.active {
+	color: #013fe1;
+	font-weight: 500;
+}
+
+#side-menu li.active ul#side-menu li a.active{ background: #eee !important; }
+.user-profile .user-pro-body .u-dropdown {
+	color: #54667a;
+}
+/*themecolor*/
+.bg-theme {
+	background-color: #707cd2 !important;
+}
+.bg-theme-dark {
+	background-color: #1b96d9 !important;
+}
+/*Button*/
+.btn-custom {
+	background: #1b96d9;
+	border: 1px solid #1b96d9;
+	color: #ffffff;
+}
+.btn-custom:hover {
+	background: #1b96d9;
+	opacity: 0.8;
+	color: #ffffff;
+	border: 1px solid #1b96d9;
+}
+/*Custom tab*/
+.customtab li.active a,
+.customtab li.active a:hover,
+.customtab li.active a:focus {
+	border-bottom: 2px solid #1b96d9;
+	color: #1b96d9;
+}
+.tabs-vertical li.active a,
+.tabs-vertical li.active a:hover,
+.tabs-vertical li.active a:focus {
+	background: #1b96d9;
+	border-right: 2px solid #1b96d9;
+}
+/*Nav-pills*/
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:focus,
+.nav-pills > li.active > a:hover {
+	background: #1b96d9;
+	color: #ffffff;
+}
+/*Custom*/
+.theme-color {
+	color: #1b96d9;
+}
+.btn-main {
+	background: #0143e5;
+	border: 1px solid #0143e5;
+	color: #fff;
+}
+.btn-main:hover, .btn-main.disabled:hover, .btn-main:focus, .btn-main.disabled:focus, .btn-main.focus, .btn-danger.disabled.focus {
+	background: #ff8000;
+	opacity: 0.8;
+	border: 1px solid #ff8000;
+	color: #fff;
+}
+.checkbox-main input[type="checkbox"]:checked + label::before {
+	background-color: #1b96d9;
+	border-color: #1b96d9;
+}
+.checkbox-main input[type="checkbox"]:checked + label::after {
+	color: #ffffff;
+}
+.label-main {
+	background-color: #1b96d9;
+	color: #fff;
+}
+.text-main{color:#1b96d9;}

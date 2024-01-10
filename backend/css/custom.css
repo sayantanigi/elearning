@@ -1,0 +1,214 @@
+.selectdays li{
+  display: inline-block;
+  min-width: 80px;
+  background: #eeee;
+  margin-bottom: 5px;
+  padding: 8px 10px 0px;
+  margin-right: 2px;
+  border-radius: 4px;
+  font-weight: 500;
+  color: #000;
+  font-size: 13px;
+}
+.selectdays li input[type="checkbox"]{
+  background-color: red;
+}
+.weekdays li{
+  background: #d7efff;
+}
+/*----Datepicker css---*/
+.ui-widget.ui-widget-content{
+      background: #eee;
+}
+.ui-datepicker .ui-datepicker-title{
+  padding: 0;
+}
+.ui-timepicker-div .ui-widget-header {
+  margin-bottom: 8px;
+  background: #3591d0;
+  color: #fff;
+  text-transform: uppercase;
+}
+.ui-datepicker .ui-datepicker-buttonpane button{
+  background: #86b223;
+    color: #fff;
+    border: 0;
+    text-shadow: none;
+}
+.contentmodal{
+  max-height: 300px;
+  overflow: auto;
+}
+/*---Rating Css---*/
+.dashboard-course-item__rating {
+  margin-bottom: 4px;
+}
+.dashboard-course-item__rating .rating-star {
+  display: inline-block;
+  position: relative;
+}
+.dashboard-course-item__rating .rating-star::before {
+  content: "\f006\f006\f006\f006\f006";
+  font-weight: 400;
+  font-size: 14px;
+  color: #f7c04d;
+  font-family: "FontAwesome";
+  letter-spacing: 2px;
+}
+.dashboard-course-item__rating .rating-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.dashboard-course-item__rating .rating-label::before {
+  content: "\f005\f005\f005\f005\f005";
+  font-weight: 900;
+  font-size: 14px;
+  color: #f7c04d;
+  font-family: "FontAwesome";
+  letter-spacing: 2px;
+}
+/*---End Here---*/
+
+/*curriculum css*/
+.preview-image-curriculum {
+    margin: 10px 10px 10px 10px;
+    font-size: 30px; 
+    color: #008000;
+    height: 220px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.preview-image-curriculum i{
+  color: #374037;
+}
+.preview-image-curriculum.image-container-frame{
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+   padding: 6px;
+   float: left;
+   background: #ffffffb8;
+} 
+.preview-image-curriculum.image-container-frame .curriculum-content {
+  width: 210px;
+  height: 140px;
+}
+.file-footer-caption{
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 11px;
+  color: #999;
+}
+.file-footer-caption.file-caption-info{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 160px;
+  height: 15px;
+  margin: auto;
+}
+.curriculum-main {
+    width: 210px;
+    height: 140px;
+}
+.curriculum-doc-content {
+    font-size: 3em;
+    line-height: 1.7;
+    text-align: center;
+}
+.curriculum-audio-content {
+    width: 210px;
+    height: 140px;
+    text-align: center;
+}
+.curriculum-audio-content i{
+    font-size: 50px;
+    padding: 13px 0px;
+}
+.curriculum-audio-main {
+    width: 210px;
+    height: 60px;
+}
+.curriculum-icons{
+    text-align: right;
+}
+.curriculum-icons a{
+    font-size: 11px;
+    background: #e4e7ea;
+    padding: 8px 10px;
+}
+.file-sortable .file-drag-handle {
+    cursor: grab;
+    opacity: 1;
+}
+.file-drag-handle, .krajee-default .file-upload-indicator {
+    float: left;
+    margin-top: 25px;
+    width: 16px;
+    height: 16px;
+    font-size: 17px;
+    cursor: grab;
+}
+
+/*curriculum div loader*/
+#curriculum_loader.show {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 90%;
+    z-index: 9999;
+    background: url('../images/preloader.gif') 50% 50% no-repeat rgb(249,249,249);
+    opacity: 0.8;
+}
+/*end here*/
+
+/* Admin Navbar Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #0d6efd; 
+}
+/*end here*/
+
+.file-block{
+    display: block !important;
+    text-align: center;
+}
+
+.form-radio .radio-btn{
+    margin-right: 2px !important;
+    width: 18px !important;
+    height: 18px !important;
+}
+
+.form-radio .radio-label{
+ margin-top: 0px !important;
+}
+
+.select-time .select2-container .select2-selection--single {
+    height: 47px;
+}
+.select-time .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #444;
+    line-height: 47px;
+}
+
+.select-time .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 47px;
+}
+

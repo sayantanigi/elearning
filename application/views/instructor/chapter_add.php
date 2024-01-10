@@ -1,0 +1,93 @@
+<div class="dashboard-content">
+  <div class="container">
+     <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="<?=base_url('instructor/chapters/'.$subjectId)?>">Chapters</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Create Chapter</li>
+        </ol>
+     </nav> 
+      <form action="<?= base_url('instructor/chapter/create') ?>" class="needs-validation" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="dashboard-content-box">
+
+                    <h4 class="dashboard-content-box__title">Chapter Description</h4>
+
+                    <div class="row gy-4">
+                        <div class="col-md-12">
+                          <label class="form-label-02">Chapter Name<span style="color:red;"> *</span></label>
+                          <input type="text" name="chapterName" id="chapterName" value="" class="form-control" required>
+                          <input type="hidden" name="subjectId" value="<?=$subjectId?>">
+                        </div>
+
+                        <div class="col-md-12">
+                          <label class="form-label-02">Chapter Duration (In Hours)<span style="color:red;"> *</span></label>
+                          <input type="number" name="totalHours" id="totalHours" value="" class="form-control" required>
+                        </div>
+
+                        <div class="col-md-12">
+                          <label class="form-label-02">Chapter Cost (In USD)<span style="color:red;"> *</span></label>
+                          <input type="number" name="cost" id="cost" value="" class="form-control" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-6">
+                <div class="dashboard-content-box">
+
+                    <h4 class="dashboard-content-box__title">Chapter Thumbnail<span style="color:red;"> *</span></h4>
+                    <p>Upload Chapter Thumbnail.</p>
+
+                    <div id="dashboard-profile-cover-photo-editor" class="dashboard-settings-profile" style="height:250px;">
+                        <input id="dashboard-photo-dialogue-box" class="dashboard-settings-profile__input test" type="file" name="image" accept=".png,.jpg,.jpeg" required />
+                        <div id="dashboard-cover-area" class="dashboard-settings-profile__cover" data-fallback="<?= base_url('uploads/noimg.png') ?>" style="background-image:url(<?=base_url('uploads/noimg.png')?>)">
+                           
+                            <div class="overlay">
+                                <button class="cover-uploader" type="button">
+                                    <i class="far fa-camera"></i>&nbsp;
+                                    <span>Select Chapter Thumbnail</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12 mt-3">
+               <div class="dashboard-content-box">
+                    <div class="row gy-4">
+                       <div class="col-md-12">
+                        <div class="dashboard-content__input">
+                            <label class="form-label-02">Chapter Summary<span style="color:red;"> *</span></label>
+                            <textarea class="form-control tinymce" name="summary" required></textarea>
+                        </div>
+                    </div>
+                  </div>             
+               </div>
+            </div>
+
+            <div class="col-lg-12 mt-3">
+               <div class="dashboard-content-box">
+                    <div class="row gy-4">
+                       <div class="col-md-12">
+                        <div class="dashboard-content__input">
+                            <label class="form-label-02">Chapter Objective<span style="color:red;"> *</span></label>
+                            <textarea class="form-control tinymce" name="objectives" required></textarea>
+                        </div>
+                    </div>
+                  </div>             
+               </div>
+                <div class="dashboard-settings__btn">
+                    <button type="submit" class="btn btn-primary btn-hover-secondary">Create Chapter</button>
+                    <a href="<?=base_url('instructor/chapters/'.$subjectId)?>">
+                        <button type="button" class="btn btn-danger btn-hover-danger">Cancel</button>
+                    </a>    
+                </div>     
+            </div>
+          
+        </div>
+      </form>
+   </div>
+</div>   

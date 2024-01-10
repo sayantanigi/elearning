@@ -1,0 +1,736 @@
+/*---Declaring Global CSS Variables---*/
+:root{
+  --tooltip-color: #563d7c;
+}
+/*---End Here---*/
+
+.subjectmodal .modal-content{
+  padding: 0px;
+}
+.subjectmodal .modal-body{
+  padding: 20px;
+}
+.modalclose{
+  position: absolute;
+  right: 8px;
+  top: 16px;
+  background: #0455a1;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  line-height: 26px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+}
+.subjectmodal .modal-header{
+  padding: 15px 20px;
+  background: #0071dc;
+  color: #fff;
+  margin-bottom: 0;
+}
+.subjectmodal .modal-title{
+  margin: 0;
+  font-size: 20px;
+  width: 100%;
+  text-align: left;
+  color: #fff;
+  font-weight: 500;
+}
+.courserlistBlock {
+  padding: 10px;
+  border: 1px solid #318ECE;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.courserlistBlock p {
+  font-size: 13.5px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+.label-courseimg{
+  object-fit: cover;
+}
+
+/*----Login Modal----*/
+#loginModal .modalclose{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  background: #0071dc;
+  border-color: #0071dc;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  opacity: 5;
+}
+#loginModal .modalclose i{
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+/*----Ends Here---*/
+
+/*----Register Modal---*/
+#registerModal .modalclose{
+  position: absolute;
+  right: 10px;
+  top: 12px;
+  background: #0071dc;
+  border-color: #0071dc;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  opacity: 5;
+}
+#registerModal .modalclose i{
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+/*----Ends Here---*/
+.course_detail{
+    padding: 11px 15px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background-color: #0071dc;
+    color: #FFFFFF;
+    display: inline-block;
+    cursor: pointer;
+}
+.instructor_detail{
+    padding: 11px 15px;
+    margin-top: 8px;
+    border-radius: 3px;
+    background-color: #fff;
+    color: #0071dc;
+    border: 1px solid #318ECE;
+    display: inline-block;
+    cursor: pointer;
+}
+/*----Student Class Booking Modal---*/
+.classBookModal .modal-content{
+  padding: 50px 30px 30px;
+  border-radius: 5px;
+}
+.classBookModal .modalclose{
+    position: absolute;
+    right: 6px;
+    top: 6px;
+    background: #0455a1;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+}
+
+/*----Student Class Booking Modal---*/
+.schedule-detail label{
+   font-weight: bold;
+}
+/*----END HERE----*/
+
+/*----Student SCHEDULE BOOKING DETAIL DIV ---*/
+.booked-sesaon-detail{
+  margin: 10px 0px 0px 0px;
+  border: 1px solid #318ECE;
+  border-radius: 5px;
+  background-color: #0071dc;
+  color: #fff;
+}
+.booked-sesaon-detail .book-detail{
+  padding: 25px 10px;
+}
+.booked-sesaon-detail .book-btn-div{
+  padding: 14px 10px 14px 0px;
+}
+.booked-sesaon-detail .book-btn{
+  padding-: 0px 20px 0px;
+  border-radius: 3px;
+  background-color: #4bd863;
+  color: black;
+}
+.booked-sesaon-detail .booking-info i{
+  font-size: 20px;
+  padding: 30px 0px 0px 10px;
+  text-align: center;
+}
+/*----END HERE----*/
+
+/*----Bootstrap ttoltip custom color---*/
+.color-tooltip > .tooltip-inner {background-color: var(--tooltip-color);}
+
+.color-tooltip.bs-tooltip-bottom > .tooltip-arrow::before, .color-tooltip.bs-tooltip-auto[data-popper-placement^=bottom] > .tooltip-arrow::before {border-bottom-color: var(--tooltip-color);}
+
+.color-tooltip.bs-tooltip-top > .tooltip-arrow::before, .color-tooltip.bs-tooltip-auto[data-popper-placement^=top] > .tooltip-arrow::before {border-top-color: var(--tooltip-color);}
+
+.color-tooltip.bs-tooltip-start > .tooltip-arrow::before, .color-tooltip.bs-tooltip-auto[data-popper-placement^=left] > .tooltip-arrow::before {border-left-color: var(--tooltip-color);}
+
+.color-tooltip.bs-tooltip-end > .tooltip-arrow::before, .color-tooltip.bs-tooltip-auto[data-popper-placement^=right] > .tooltip-arrow::before {border-right-color: var(--tooltip-color);}
+/*----END HERE----*/
+
+/*---Course Grid CSS---*/
+.course-info__price .sale-price {
+    font-size: 12px;
+    line-height: 1.8;
+    font-weight: 600;
+    color: #1e1e1e;
+    background: #f3f3f3;
+    padding: 1px 5px;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+/*----END HERE----*/
+.courseLabel .nav .nav-link{
+  width: 100%;
+  border: 1px solid #eee;
+  background: #eee;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  border-radius: 0;
+  color: #262626;
+  border-right: 2px solid #fff;
+}
+.courseLabel .nav .nav-link.active{ 
+  background-color: #0071dc;
+  color: #fff;
+}
+.courseBox{
+  border: 1px solid #318ECE;
+  border-radius:10px;
+  padding: 15px 12px;
+  width: 100%;
+  text-align: center;
+  transition: all .3s;
+}
+.courseBox:hover{
+    background: #f8f8f8;
+    box-shadow: 0 5px 10px #00000029;
+}
+.couserIcon{
+  margin-bottom: 20px;
+}
+.couserIcon img{
+  height: 75px;
+  object-fit: contain;
+}
+.courseBox h3{
+  font-size: 16px;
+  color: #318ECE;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.appdownload a{
+  padding: 5px;
+}
+.appdownload img{
+  width: 141px;
+}
+.pop-user{
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d3d3d3;
+}
+.contentmodal{
+  max-height: 300px;
+  overflow: auto;
+}
+/*---Review CSS---*/
+.rating-box {
+  display: inline-block;
+}
+.rating-container {
+    direction: rtl !important;
+}    
+.rating_label {
+  display: inline-block;
+  margin: 0px 0;
+  color: #d4d4d4;
+  cursor: pointer;
+  font-size: 45px;
+  transition: color 0.2s;
+}
+.review_input {
+  display: none;
+}
+.rating_label:hover, .rating_label:hover ~ .rating_label, .review_input:checked ~ .rating_label  {
+  color: gold;
+}
+.breadcrumb-item{
+  margin: 20px 0 15px;
+  font-weight: 500;
+  font-size: 13px;
+  padding-right: 15px;
+  position: relative;
+}
+.breadcrumb-item:after{
+  position: absolute;
+    content: '/';
+    right: 0px;
+    top: 1px;
+    color: #666;
+}
+.breadcrumb-item:last-child:after{
+  display: none;
+}
+.breadcrumb-item a{
+      color: #0071dc;
+      display: block;
+}
+/*curriculum css*/
+.preview-image-curriculum {
+    margin: 10px 10px 10px 10px;
+    font-size: 30px; 
+    color: #008000;
+    height: 224px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.preview-image-curriculum i{
+  color: #374037;
+}
+.preview-image-curriculum.image-container-frame{
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+   padding: 6px;
+   float: left;
+   background: #ffffffb8;
+} 
+.preview-image-curriculum.image-container-frame .curriculum-content {
+  width: 210px;
+  height: 140px;
+}
+.file-footer-caption{
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  font-size: 11px;
+  color: #999;
+}
+.file-footer-caption.file-caption-info{
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 160px;
+  height: 15px;
+  margin: auto;
+}
+.curriculum-main {
+    width: 210px;
+    height: 140px;
+}
+.curriculum-doc-content {
+    font-size: 3em;
+    line-height: 1.7;
+    text-align: center;
+}
+.curriculum-audio-content {
+    width: 210px;
+    height: 140px;
+    text-align: center;
+}
+.curriculum-audio-content i{
+    font-size: 50px;
+    padding: 13px 0px;
+}
+.curriculum-audio-main {
+    width: 210px;
+    height: 60px;
+}
+.curriculum-icons{
+    text-align: right;
+}
+.curriculum-icons a{
+    font-size: 11px;
+    background: #e4e7ea;
+    padding: 4px 10px;
+}
+.file-sortable .file-drag-handle {
+    cursor: grab;
+    opacity: 1;
+}
+.file-drag-handle, .krajee-default .file-upload-indicator {
+    float: left;
+    margin-top: 25px;
+    width: 16px;
+    height: 16px;
+    font-size: 17px;
+    cursor: grab;
+}
+.card-header {
+    position: relative;
+    background: transparent;
+    padding: 1.5rem 1.875rem 1.25rem;
+    display: block;
+    align-items: center;
+}
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    text-transform: capitalize;
+}
+.curriculum-row{
+    padding-right: calc(var(--bs-gutter-x) * 0);
+    padding-left: calc(var(--bs-gutter-x) * 0);
+}
+.right-side{
+  text-align: -webkit-right !important;
+  display: block !important;
+}
+.border-inside{
+   border:1px solid #0071dc;
+   border-radius: 5px;
+   margin: 0px!important;
+}
+/*Select2 Css*/
+.select2-selection{
+  background-color: #f8f8f8!important;
+}
+.select2-selection__rendered {
+    line-height: 45px !important;
+}
+.select2-container .select2-selection--single {
+    height: 50px!important;
+}
+.select2-search__field{
+  line-height: 14px;
+}
+.select2-search--inline .select2-search__field {
+  height: auto!important;
+}
+/*end here*/
+.border-around{
+  border: 1px solid #000000!important;
+  border-radius: 5px;
+  padding:10px;
+  margin-top:30px;
+}
+
+.avatar-upload {
+   position: relative;
+   max-width: 205px;
+}
+.avatar-upload .avatar-edit {
+   position: absolute;
+   right: 12px;
+   z-index: 1;
+   top: 10px;
+}
+ .avatar-upload .avatar-edit input {
+   display: none;
+}
+ .avatar-upload .avatar-edit input + label {
+   display: inline-block;
+   width: 34px;
+   height: 34px;
+   margin-bottom: 0;
+   border-radius: 100%;
+   background: #fff;
+   border: 1px solid transparent;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+   cursor: pointer;
+   font-weight: normal;
+   transition: all 0.2s ease-in-out;
+}
+ .avatar-upload .avatar-edit input + label:hover {
+   background: #f1f1f1;
+   border-color: #d6d6d6;
+}
+ .avatar-upload .avatar-edit input + label:after {
+   content: "\f040";
+   font-family: "Font Awesome\ 5 Pro";
+   color: #757575;
+   position: absolute;
+   top: 10px;
+   left: 0;
+   right: 0;
+   text-align: center;
+   margin: auto;
+}
+ .avatar-upload .avatar-preview {
+   width: 192px;
+   height: 192px;
+   position: relative;
+   border-radius: 100%;
+   border: 6px solid #f8f8f8;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+ .avatar-upload .avatar-preview > div {
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+ .avatar-upload {
+   position: relative;
+   max-width: 205px;
+   margin: 50px auto;
+}
+ .avatar-upload .avatar-edit {
+   position: absolute;
+   right: 12px;
+   z-index: 1;
+   top: 10px;
+}
+ .avatar-upload .avatar-edit input {
+   display: none;
+}
+ .avatar-upload .avatar-edit input + label {
+   display: inline-block;
+   width: 34px;
+   height: 34px;
+   margin-bottom: 0;
+   border-radius: 100%;
+   background: #fff;
+   border: 1px solid transparent;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+   cursor: pointer;
+   font-weight: normal;
+   transition: all 0.2s ease-in-out;
+   line-height: 17px;
+}
+ .avatar-upload .avatar-edit input + label:hover {
+   background: #f1f1f1;
+   border-color: #d6d6d6;
+}
+ .avatar-upload .avatar-edit input + label:after {
+   content: "\f040";
+   font-family: "Font Awesome\ 5 Pro";
+   color: #757575;
+   position: absolute;
+   top: 10px;
+   left: 0;
+   right: 0;
+   text-align: center;
+   margin: auto;
+}
+ .avatar-upload .avatar-preview {
+   width: 192px;
+   height: 192px;
+   position: relative;
+   border-radius: 100%;
+   border: 6px solid #f8f8f8;
+   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+ .avatar-upload .avatar-preview > div {
+   width: 100%;
+   height: 100%;
+   border-radius: 100%;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+/*end here*/
+
+/*Custom Dropdown Css*/
+.dtp-8{
+   padding: 8px;
+   border-radius: 5px;
+}
+.dm-item{
+  top: 40%;
+}
+.dm-item li{
+  padding:5px;
+}
+.dm-item li a{
+  font-size: 14px;
+}
+/*end here*/
+/*custom Modal CSS*/
+.course-modal-content{
+  padding: 0px!important;
+  overflow-y: auto!important;
+  overflow-x: hidden!important;
+}
+.course-modal-header{
+  padding: 10px 10px 10px 20px!important;
+  text-align: left!important;
+  align-items: flex-start;
+  border-bottom: 1px solid #dee2e6;
+  display: -webkit-inline-box;
+}
+.course-info-close{
+  padding: 0.875rem 1.5rem!important;
+  margin: 0;
+  position: absolute;
+  right: 0;
+  float: none;
+  top: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.course-modal-header h5{
+   margin: 0px!important;
+   font-size: 22px!important;
+   font-weight: 500!important;
+}
+.course-modal-body{
+  padding: 10px 30px 25px!important;
+}
+.course-modal-body h5{
+  font-size: 20px;
+  font-weight: 400!important;
+}
+.course-modal-body th>h5{
+  font-size: 15px;
+}
+.course-modal-body i,th{
+  font-weight: 500!important;
+}
+/*--overlay loader css end--*/
+.overlayer {
+    background: #ffffff;
+    color: #666666;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    float: left;
+    text-align: center;
+    opacity: .80;
+}
+
+.spinner {
+   margin: 0 auto;
+    height: 64px;
+    width: 64px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    animation: rotate 0.8s infinite linear;
+    border: 5px solid firebrick;
+    border-right-color: transparent;
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*-----END HERE----*/
+
+.course-heading{
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 15px;
+}
+
+.course-heading a{
+  font-size: 12px;
+  border-radius: 10px;
+  padding: 6px!important;
+  background: ;
+  border-radius: 3px;
+  background-color: #0071dc;
+  color: #FFFFFF;
+}
+.top-instructer{
+  background: #f3f3f3;
+}
+.owl-carousel .tutorprofile .course-header__thumbnail img{
+  width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: auto;
+    border-radius: 10px;
+}
+.tutorprofile {
+      background: #fff;
+    padding: 20px 10px;
+    border-radius: 10px;
+}
+.top-instructer .owl-next{
+  width: 28px;
+  height: 28px;
+  background: #0071dc !important;
+  color: #fff !important;
+  font-size: 33px;
+  line-height: 29px;
+  border-radius: 50%;
+  top: -50px;
+  position: absolute;
+  right: 0;
+}
+.top-instructer .owl-prev{
+  width: 28px;
+  height: 28px;
+  background: #0071dc !important;
+  color: #fff !important;
+  font-size: 33px;
+  line-height: 29px;
+  border-radius: 50%;
+  top: -50px;
+  position: absolute;
+  right: 35px;
+}
+.header-section #google_translate_element span{
+  display: none;
+}
+.header-section #google_translate_element{
+  width: 160px;
+    float: right;
+    overflow: hidden;
+}
+.header-section .skiptranslate {
+  display: flex;
+    color: transparent;
+    width: 160px;
+}
+.header-section .skiptranslate > div+{
+  display: none;
+}
+.header-section  .goog-te-combo{
+  height: 36px;
+    margin: 0;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.popupvideo iframe, .popupvideo video{
+  width: 100%;
+  height: 200px;
+}
+.tab-content .owl-carousel .owl-next{
+  position: absolute;
+    top: 38%;
+    right: 0;
+}
+.tab-content .owl-carousel .owl-prev{
+    position: absolute;
+    top: 38%;
+    left: 0;
+}
+/*Google translate div height*/
+body{
+  top: 0 !important;
+}
+.skiptranslate > iframe{
+  display: none;
+  height: 0;
+}
+/*end here*/
