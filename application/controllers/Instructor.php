@@ -3,16 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 //Adding namespace for twillo package
 use Twilio\Rest\Client;
-
 //Adding namespace for phpmailer package
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-class Instructor extends MY_Controller
- {
-
-	public function __construct()
-	{
+class Instructor extends MY_Controller {
+	public function __construct() {
 		parent::__construct();
 		$this->load->model('Commonmodel');
 		$this->load->model('Authmodel');
@@ -25,8 +21,7 @@ class Instructor extends MY_Controller
 		$this->config->load('mail_config');
 	}
 
-	public function testtwiloSms()
-	{
+	public function testtwiloSms() {
 		$testText = 'Hello Neel, your one time otp is: '.rand(999,9999);
 		$data = ['phone' => '+918617304367', 'text' => $testText];
 		
@@ -37,21 +32,21 @@ class Instructor extends MY_Controller
 
 	public function sendSMS($data) {
        // Your Account SID and Auth Token from twilio.com/console
-       $sid = 'AC9b13e6f8a8ef1e5b23f8252c27be4407';
-       $token = 'f9e2fdfa367c97fb5b138dfeebd5e745';
-       $client = new Client($sid, $token);
+		$sid = 'AC9b13e6f8a8ef1e5b23f8252c27be4407';
+		$token = 'f9e2fdfa367c97fb5b138dfeebd5e745';
+		$client = new Client($sid, $token);
 			
-       // Use the client to do fun stuff like send text messages!
-       return $client->messages->create(
-          // the number you'd like to send the message to
-          $data['phone'],
-          array(
-              // A Twilio phone number you purchased at twilio.com/console
-              "from" => "+13343784847",
-              // the body of the text message you'd like to send
-              'body' => $data['text']
-          )
-      );
+		// Use the client to do fun stuff like send text messages!
+		return $client->messages->create(
+			// the number you'd like to send the message to
+			$data['phone'],
+			array(
+				// A Twilio phone number you purchased at twilio.com/console
+				"from" => "+13343784847",
+				// the body of the text message you'd like to send
+				'body' => $data['text']
+			)
+		);
    }
 
    public function notify_user_via_mail(){
